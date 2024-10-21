@@ -1,0 +1,20 @@
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+    <title>Emifish Blanco</title>
+</head>
+<body>
+    <h1>Hola mundo cruel</h1>
+    <h1>Emifish Blanco</h1>
+    <HR>
+        {% for i in misalumnos %}
+            <li> <a href="alumno/{{i.id}}">{{i.nombre}} {{i.apaterno}}</a></li>
+        {% endfor %}
+    </HR>
+    <script src="{% static 'scripts.js' %}"></script>
+    
+</body>    
+</html>
